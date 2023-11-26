@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+             <img src="/project/portfolio/photo/Screenshot (97).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-circle-xmark"onclick="closemenu()"></i>
+                </ul>
+                <i class= "fa fa-bars"  onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi ! I'm <span id="name">Raj Kumar Gupta </span></h1>
+                <p>Frontend Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------About Me -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="/project/portfolio/photo/Raj.jpg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="SubTitle" >About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate incidunt delectus vero deserunt ullam? Quas incidunt repellendus maiores, ut id eos aut nam accusamus iure aspernatur, assumenda vero eveniet. Harum vitae repellat qui, quisquam excepturi porro molestias ipsum, laudantium fuga est nihil aspernatur? Totam corporis possimus sit consequatur voluptatum ipsam non molestiae, officiis molestias neque natus dolore doloribus dolores! Laborum eum fuga accusantium quasi sed in consequatur a! Dolores nesciunt ab iure dolorum necessitatibus laborum rem esse quam vero?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+
+
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+
+                    <div class="tab-contents active-tab" id="skills">
+                       <ul>
+                        <li><span>Frontend Development</span><br>HTML5<br>CSS<br>JavaScript<br>React Js</li>
+
+                        <li><span>Backend</span><br>Server Side programming</li>
+                      
+                       </ul> 
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                         <li><span>SEP 2023 - Present</span><br>Medicare - Plus<br>Frontend Developer</li>
+ 
+                         <li><span>Java Fullstack Training</span><br> JAVA SQL WEB Development<br>Qspider</li>
+                       
+                        </ul> 
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                         <li><span>2019 - 2023</span><br>B.TECH(CSE)<br>Maharshi Dayanand University</li>
+ 
+                         <li><span>2017 - 2019</span><br>INTERMEDIATE<br>BSEB</li>
+                       
+                         <li><span>2015 - 2017</span><br>MATRICULATION<br>CBSE</li>
+                        </ul> 
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+               <!-- -------------Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta ipsa id nemo eaque labore facilis am praesentium numquam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta ipsa id nemo eaque labore facilis ampraesentium numquam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+           <!-- -----------------Portfolio------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/project/portfolio/photo/shiva.webp">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/project/portfolio/photo/shiva.webp">
+                    <div class="layer">
+                        <h3>Medicare Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/project/portfolio/photo/shiva.webp">
+                    <div class="layer">
+                        <h3>JIO </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button">See More</a>
+
+        </div>
+    </div>
+   
+                 <!-- -----------Contact------- -->
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                 <h1 class="sub-title">Contact Me</h1>
+                 <p><i class="fa-solid fa-paper-plane"></i>jmdrajkumargupta2002@gmail.com</p> 
+                 <p><i class="fa-solid fa-mobile"></i>8541897148</p>  
+                 <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="https://www.linkedin.com/in/raj-kr-gupta"><i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://www.hackerrank.com/profile/jmdrajkumargupt1"><i class="fa-brands fa-hackerrank"></i></a>
+                 </div>
+
+                 <a href="/project/portfolio/photo/Raj kumar Gupta.pdf" download class="button button2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea type="Message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+  <script>
+   var tablinks=document.getElementsByClassName("tab-links");
+
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for( tabcontent of  tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+  </script>
+
+
+  <script>
+
+    var Sidemenu= document.getElementById("sidemenu");
+  
+     function openmenu(){
+      Sidemenu.style.right="0";
+
+     }
+     function closemenu(){
+        Sidemenu.style.right="-200px";
+     }
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzzBHoYIVhegjIOk4xs5sPMHQ1uCMwniwEDI5EzrDDmLkOrcpwmGXk_UnN3CyV5huSokA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){msg.innerHTML=""},5000
+            ) 
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
